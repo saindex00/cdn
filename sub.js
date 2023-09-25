@@ -1,4 +1,4 @@
-class StripePricingTable extends HTMLElement {
+class CustomeStripePricingTable extends HTMLElement {
     constructor() {
         super();
         // Your custom element's initialization code here
@@ -25,4 +25,4 @@ class StripePricingTable extends HTMLElement {
 }
 
 // Register the custom element with the browser
-customElements.define('custome-stripe-pricing-table', StripePricingTable);
+customElements.define('custome-stripe-pricing-table', CustomeStripePricingTable);
