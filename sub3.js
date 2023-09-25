@@ -3,6 +3,13 @@ class CustomeStripePricingTable extends HTMLElement {
         super();
         // Your custom element's initialization code here
         // You can access attributes and content inside this constructor
+
+        const shadow = this.attachShadow({ mode: 'open' });
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://js.stripe.com/v3/fingerprinted/css/pricing-table-app-cc1ff4de30c57e81b67e982d59b34331.css';
+
+
         const pricingTableId = this.getAttribute('pricing-table-id');
         const publishableKey = this.getAttribute('publishable-key');
 
@@ -552,7 +559,7 @@ class CustomeStripePricingTable extends HTMLElement {
       `;
 
         // Attach the HTML content to the shadow DOM of the custom element
-        const shadow = this.attachShadow({ mode: 'open' });
+        shadow.appendChild(link);
         shadow.innerHTML = htmlContent;
     }
 
