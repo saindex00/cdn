@@ -560,7 +560,7 @@ class CustomeStripePricingTable extends HTMLElement {
 
         // Attach the HTML content to the shadow DOM of the custom element
         shadow.appendChild(link);
-        shadow.innerHTML = htmlContent;
+        shadow.innerHTML += htmlContent;
     }
 
     // Other methods and event handlers can be defined here
