@@ -25,4 +25,4 @@ class StripePricingTable extends HTMLElement {
 }
 
 // Register the custom element with the browser
-customElements.define('stripe-pricing-table', StripePricingTable);
+customElements.define('custome-stripe-pricing-table', StripePricingTable);
